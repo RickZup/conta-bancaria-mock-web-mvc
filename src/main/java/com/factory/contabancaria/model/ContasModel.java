@@ -33,10 +33,10 @@ public class ContasModel {
     @Column(nullable = false)
     private BigDecimal valorAtualConta;
 
-    @Column(nullable = false)
+    @Column
     private BigDecimal ValorFornecido;
 
-    @Column(length = 20, nullable = false)
+    @Column
     private String tipoServico;
 
     private BigDecimal valorFinal;

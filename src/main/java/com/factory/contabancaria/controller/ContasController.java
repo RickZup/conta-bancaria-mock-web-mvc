@@ -86,11 +86,42 @@ public class ContasController {
         return new ResponseEntity<>(usuarioDTO, HttpStatus.CREATED);
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     //PUT - Alterar uma conta já existente dentro do banco
     @PutMapping(path = "/{id}")
     public ContasModel atualizarConta(@PathVariable Long id, @RequestBody ContasModel contasModel){
         return contasService.alterar(id, contasModel);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @PutMapping(path = "/{id}/nome-usuario/{novoNome}")
     public ResponseEntity<ContasModel> alterarNomeDoUsuario(
